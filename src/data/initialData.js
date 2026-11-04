@@ -252,9 +252,9 @@ export const TESTIMONIALS = [
   },
   {
     quote: "The interactive proposal process was effortless, and the team executed beyond our wildest expectations. Their cinematic video quality is unmatched in the industry.",
-    author: "Pooja Varma",
+    author: "Jishnu Subash",
     role: "Marketing Director, Velvet Hospitality",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+    image: "/team-jishnu.jpg",
     rating: 5
   },
   {
