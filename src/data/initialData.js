@@ -245,9 +245,9 @@ export const INITIAL_LEADS = [
 export const TESTIMONIALS = [
   {
     quote: "CRYVO completely overhauled our digital presence. Within 60 days, our ROAS went from 2.1x to 6.8x, and our Instagram transformed into a customer magnet.",
-    author: "Kabir Mehra",
-    role: "Founder & CEO, Aurum Timepieces",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+    author: "Arjun Santhosh",
+    role: "Founder & CEO, CRYVO Digital Marketing",
+    image: "/founder-ceo.jpg",
     rating: 5
   },
   {

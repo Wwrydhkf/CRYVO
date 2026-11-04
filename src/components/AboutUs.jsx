@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Lightbulb, Shield, Award, Users, Flame, Star, Quote } from 'lucide-react';
+import { Target, Lightbulb, Shield, Award, Users, Flame, Star, Quote, Crown } from 'lucide-react';
 import { TESTIMONIALS } from '../data/initialData';
 
 export default function AboutUs() {
@@ -60,44 +60,65 @@ export default function AboutUs() {
             </div>
           </div>
 
-          {/* Visual Showcase Box with Emblem */}
+          {/* CEO / Founder Showcase Card */}
           <div className="lg:col-span-6 relative flex justify-center">
-            <div className="relative w-full max-w-md aspect-square rounded-3xl glass-panel-gold p-8 border border-gold-500/30 flex flex-col items-center justify-center text-center shadow-2xl overflow-hidden group">
-              {/* Glowing background circles */}
+            <div className="relative w-full max-w-md rounded-3xl glass-panel-gold border border-gold-500/30 shadow-2xl overflow-hidden group">
+              {/* Ambient top glow */}
               <div className="absolute -inset-10 bg-gold-500/10 rounded-full blur-3xl group-hover:bg-gold-500/20 transition-all duration-700 pointer-events-none" />
 
-              <div className="relative w-36 h-36 rounded-full p-1 bg-gradient-to-tr from-gold-600 via-amber-300 to-gold-800 shadow-2xl mb-6">
-                <div className="w-full h-full rounded-full bg-black flex items-center justify-center overflow-hidden">
-                  <img
-                    src="/cryvo-logo.png"
-                    alt="CRYVO Emblem"
-                    className="w-full h-full object-cover scale-110"
-                  />
+              {/* Founder Photo — full-bleed portrait */}
+              <div className="relative h-96 w-full overflow-hidden">
+                <img
+                  src="/founder-ceo.jpg"
+                  alt="CRYVO Founder & CEO"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                />
+                {/* Gradient overlay at bottom */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#070709] via-black/20 to-transparent" />
+
+                {/* Crown Badge */}
+                <div className="absolute top-4 left-4 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/70 backdrop-blur-md border border-gold-500/50 text-gold-400 text-xs font-bold">
+                  <Crown className="w-3.5 h-3.5 text-gold-400 fill-gold-400" />
+                  <span>CEO & Founder</span>
                 </div>
+
+                {/* Instagram badge */}
+                <a
+                  href="https://instagram.com/cryvo.media"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute top-4 right-4 flex items-center gap-1 px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-[11px] font-semibold text-white hover:border-gold-500/50 transition-all"
+                >
+                  <span>@cryvo.media</span>
+                </a>
               </div>
 
-              <div className="font-cinzel text-3xl font-extrabold text-white tracking-widest text-gold-gradient">
-                CRYVO
-              </div>
-              <div className="text-xs tracking-[0.3em] uppercase text-gray-400 mt-1 font-semibold">
-                Digital Marketing Start-Up
-              </div>
-              <div className="text-xs font-mono text-gold-400 mt-2 bg-black/50 px-3 py-1 rounded-full border border-gold-500/30">
-                @cryvo.media
-              </div>
+              {/* Name & Title Block */}
+              <div className="relative p-6 text-center">
+                <div className="font-cinzel text-2xl font-extrabold text-gold-gradient mb-0.5">
+                  Arjun Santhosh
+                </div>
+                <div className="text-sm font-semibold text-gold-400 tracking-widest uppercase mb-3">
+                  Founder & CEO — CRYVO Digital Marketing
+                </div>
+                <p className="text-xs text-gray-400 leading-relaxed max-w-sm mx-auto">
+                  Visionary behind CRYVO's growth engine — combining cinematic creative direction with mathematical performance marketing to build brands that dominate their market.
+                </p>
 
-              <div className="mt-8 grid grid-cols-3 gap-4 w-full pt-6 border-t border-white/10 text-center">
-                <div>
-                  <div className="text-gold-300 font-extrabold text-base font-cinzel">100%</div>
-                  <div className="text-[10px] text-gray-400">Data Backed</div>
-                </div>
-                <div>
-                  <div className="text-gold-300 font-extrabold text-base font-cinzel">4K</div>
-                  <div className="text-[10px] text-gray-400">Cinematic</div>
-                </div>
-                <div>
-                  <div className="text-gold-300 font-extrabold text-base font-cinzel">24/7</div>
-                  <div className="text-[10px] text-gray-400">Live CRO</div>
+                {/* Stat row */}
+                <div className="mt-5 grid grid-cols-3 gap-3 pt-5 border-t border-white/10 text-center">
+                  <div>
+                    <div className="text-gold-300 font-extrabold text-base font-cinzel">100%</div>
+                    <div className="text-[10px] text-gray-400">Data Backed</div>
+                  </div>
+                  <div>
+                    <div className="text-gold-300 font-extrabold text-base font-cinzel">4K</div>
+                    <div className="text-[10px] text-gray-400">Cinematic</div>
+                  </div>
+                  <div>
+                    <div className="text-gold-300 font-extrabold text-base font-cinzel">24/7</div>
+                    <div className="text-[10px] text-gray-400">Live CRO</div>
+                  </div>
                 </div>
               </div>
             </div>
